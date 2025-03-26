@@ -24,8 +24,8 @@ In this project, I use the `resnest200e` model from [timm](https://github.com/hu
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/YourUsername/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/owo0505/NYCU-Computer-Vision-2025-Spring.git
+    cd NYCU-Computer-Vision-2025-Spring
     ```
 
 2. Install dependencies (make sure you have Python ≥ 3.8):
@@ -58,12 +58,14 @@ In this project, I use the `resnest200e` model from [timm](https://github.com/hu
 4. Train the model:
 
     ```bash
+    # Make sure data_dir in train.py is set to your actual dataset path
     python train.py
     ```
 
 5. Run inference (after training completes and best models are saved):
 
     ```bash
+    # Remember to change test_dir in inference.py to the actual test dataset path
     python inference.py
     ```
 
