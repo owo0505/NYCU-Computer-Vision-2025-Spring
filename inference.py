@@ -53,7 +53,7 @@ test_transform = transforms.Compose([
 
 model_configs = [
     ("resnest200e", "best_epoch_32_resnest.pth"),
-    ("resnest200e", "best_epoch_59_resnest.pth"),
+    ("resnest200e", "best_epoch_39_resnest.pth"),
     ("resnest200e", "best_epoch_28_resnest.pth")
 ]
 
@@ -69,7 +69,7 @@ for mname, pth in model_configs:
     model.eval()
     models_ensemble.append(model)
 
-test_dir = "./data/test"
+test_dir = "/path/to/data/test"
 test_dataset = TestImageDataset(test_dir, transform=test_transform)
 test_loader = DataLoader(test_dataset, batch_size=32,
                          shuffle=False, num_workers=4)

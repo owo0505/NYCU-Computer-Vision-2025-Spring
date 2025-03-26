@@ -143,7 +143,7 @@ def generate_confusion_matrix_with_heatmap(model, val_loader, device):
 
 
 def main():
-    data_dir = "/kaggle/input/dl-hw1-data/data"
+    data_dir = "/path/to/data"
     num_classes = 100
     batch_size = 32
     num_epochs = 50
